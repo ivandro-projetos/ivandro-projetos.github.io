@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gráfico de Barras</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gráfico de Barras: Comparação de Colunas</h1>
+  </header>
+  <main class="grafico_html">
+    <section id="filtros">
+      <label for="select-coluna1">Coluna 1:</label>
+      <select id="select-coluna1"></select>
+
+      <label for="select-coluna2">Coluna 2:</label>
+      <select id="select-coluna2"></select>
+
+      <button id="btn-gerar">Gerar Gráfico</button>
+      <button id="btn-limpar">Limpar Filtros</button>
+    </section>
+    
+    <section id="grafico" class="grafico">
+      <canvas id="meuGrafico" width="400" height="200"></canvas>
+    </section>
+  </main>
+  <!-- Chart.js e scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/grafico1.js"></script>
+</body>
+</html>
